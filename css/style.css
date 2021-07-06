@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+.dreamNav:hover {
+  color: white; }
+
+.nav-link {
+  font-size: 30px; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: green;
+  padding: 0px 20px 0px; }
+
+.flexnav {
+  display: flex;
+  justify-content: center; }
+
+@media (max-width: 768px) {
+  .flexnav {
+    display: flex;
+    justify-content: center;
+    text-align: center; } }
+
+.fondo {
+  background-color: blanchedalmond; }
+
+.dreamingreen {
+  display: flex;
+  justify-content: center; }
+
+.logoindex {
+  max-width: 100%;
+  height: auto; }
+
+h1 {
+  color: green;
+  font-size: 40px;
+  text-align: center; }
+
+#nosotros {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+
+p {
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  width: 60%; }

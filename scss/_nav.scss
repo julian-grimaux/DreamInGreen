@@ -1,0 +1,25 @@
+
+.dreamNav:hover{
+    color: white;
+}
+.nav-link{
+    font-size: 30px;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: green;
+    padding: 0px 20px 0px;
+}
+
+.flexnav{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .flexnav{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    
+}
