@@ -33,6 +33,11 @@
   max-width: 100%;
   height: auto; }
 
+@media (max-width: 420px) {
+  .logoindex {
+    height: 350px;
+    width: 350px; } }
+
 h1 {
   color: green;
   font-size: 40px;
