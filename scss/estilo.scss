@@ -2,6 +2,17 @@
     padding: 0;
     margin: 0;
 }
+.container-fluid{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow-x: hidden;
+    border-left: none;
+}
+#scale :hover {
+    transform: scale(1.1, 1.1); }
+    
 @import 'nav';
 @import 'index';
 @import 'sectionNosotros';

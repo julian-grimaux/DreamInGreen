@@ -2,6 +2,23 @@
   padding: 0;
   margin: 0; }
 
+.container-fluid {
+  padding: 0;
+  margin: 0; }
+
+body {
+  overflow-x: hidden;
+  border-left: none; }
+
+#scale :hover {
+  transform: scale(1.1, 1.1); }
+
+nav {
+  box-shadow: 0px 0px 8px 0px green; }
+
+.flexNavIcons {
+  display: flex; }
+
 .dreamNav:hover {
   color: white; }
 
@@ -14,7 +31,19 @@
 
 .flexnav {
   display: flex;
-  justify-content: center; }
+  justify-content: flex-end; }
+
+.iconRedesNav {
+  width: 40px;
+  height: 40px;
+  margin: 0px 10px 0px 10px; }
+
+.iconFaceNav {
+  width: 45px;
+  height: 45px; }
+
+.iconInstaNav {
+  margin-top: 1.9px; }
 
 @media (max-width: 768px) {
   .flexnav {
@@ -23,7 +52,8 @@
     text-align: center; } }
 
 .fondo {
-  background-color: blanchedalmond; }
+  background-color: blanchedalmond;
+  width: 100%; }
 
 .dreamingreen {
   display: flex;
@@ -33,6 +63,23 @@
   max-width: 100%;
   height: auto; }
 
+.flexButton {
+  display: flex;
+  justify-content: center; }
+
+.buttonIndex {
+  background-color: green;
+  font-size: 20px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 200px; }
+
+.buttonIndex:hover {
+  background-color: #01a101;
+  transform: translateY(-2px); }
+
 @media (max-width: 420px) {
   .logoindex {
     height: 300px;
@@ -40,17 +87,93 @@
 
 h1 {
   color: green;
-  font-size: 40px;
-  text-align: center; }
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 20px; }
 
 #nosotros {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 200px; }
 
-p {
+.txtNosotros {
   font-size: 20px;
   line-height: 1.5;
   text-align: center;
   width: 60%; }
+
+@media (min-width: 1300px) {
+  .sectionContact {
+    padding: 0px 150px 0px 150px; } }
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 5px; }
+
+.title {
+  font-size: 1.3rem;
+  margin: 0; }
+
+.info {
+  font-size: 1.1rem; }
+
+.form {
+  margin: 30px 0px 30px 0px; }
+
+.contactInfo {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; }
+
+.border {
+  border: 0.03rem solid #d4d4d4; }
+
+.contactMap {
+  width: 100%;
+  padding: 0; }
+
+#contacto {
+  padding: 0px 100px 0px 100px;
+  margin-top: 70px; }
+
+.btn {
+  background-color: green;
+  border: none; }
+
+.btn:hover {
+  background-color: #01a101;
+  border: none; }
+
+.FlexButtonContact {
+  display: flex;
+  justify-content: center; }
+
+@media (max-width: 768px) {
+  #contacto {
+    padding: 0; }
+  .contactMap {
+    height: 400px; } }
+
+.iconRedes {
+  height: 60px;
+  width: 60px;
+  margin: 20px; }
+
+.flexRedes {
+  display: flex;
+  justify-content: center; }
+
+.footer {
+  margin-top: 50px; }
+
+.insta {
+  height: 55px;
+  width: 55px;
+  margin: 22.5px 20px 10px 20px; }

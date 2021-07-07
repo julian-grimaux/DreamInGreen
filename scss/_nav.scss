@@ -1,4 +1,9 @@
-
+nav{
+    box-shadow: 0px 0px 8px 0px green;
+}
+.flexNavIcons{
+    display: flex;
+}
 .dreamNav:hover{
     color: white;
 }
@@ -12,14 +17,24 @@
 
 .flexnav{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
-
+.iconRedesNav{
+    width: 40px;
+    height: 40px;
+    margin: 0px 10px 0px 10px;
+}
+.iconFaceNav{
+    width: 45px;
+    height: 45px;
+}
+.iconInstaNav{
+    margin-top: 1.9px;
+}
 @media (max-width: 768px) {
     .flexnav{
         display: flex;
         justify-content: center;
         text-align: center;
-    }
-    
+    } 
 }

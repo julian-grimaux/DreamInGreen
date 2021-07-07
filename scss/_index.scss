@@ -1,5 +1,6 @@
 .fondo{
     background-color: blanchedalmond;
+    width: 100%;
 }
 .dreamingreen{
     display: flex;
@@ -8,7 +9,24 @@
 .logoindex{
     max-width: 100%;
     height: auto;
+  
 }
+.flexButton{
+    display: flex;
+    justify-content: center;
+}
+.buttonIndex{
+    background-color: green;
+    font-size: 20px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 200px;
+}
+.buttonIndex:hover {
+    background-color: rgb(1, 161, 1);
+    transform: translateY(-2px); }
 
 @media (max-width: 420px){
     .logoindex{

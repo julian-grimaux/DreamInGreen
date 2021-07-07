@@ -1,0 +1,63 @@
+@media (min-width:1300px){
+    .sectionContact{
+        padding: 0px 150px 0px 150px;
+    }
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+.title{
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.info{
+    font-size: 1.1rem;
+}
+.form{
+    margin: 30px 0px 30px 0px;
+}
+.contactInfo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.border{
+    border: 0.03rem solid rgb(212, 212, 212);
+}
+
+.contactMap{
+    width: 100%;
+    padding: 0;
+    }
+#contacto{
+    padding: 0px 100px 0px 100px;
+    margin-top: 70px;
+    
+}
+.btn{
+    background-color: green;
+    border: none;
+}
+.btn:hover{
+    background-color: rgb(1, 161, 1);
+    border: none;
+}
+.FlexButtonContact{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width:768px){
+    #contacto{
+        padding: 0;
+    }
+    .contactMap{
+        height: 400px;
+    }
+    }  
