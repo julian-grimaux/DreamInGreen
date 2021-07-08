@@ -2,27 +2,33 @@
     background-color: blanchedalmond;
     width: 100%;
 }
+.shadowIndex{
+    box-shadow: 0px 0px 40px 0px green;
+}
 .dreamingreen{
-    display: flex;
-    justify-content: center;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../assets/img/IMG_8456.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 .logoindex{
-    max-width: 100%;
-    height: auto;
-  
-}
-.flexButton{
-    display: flex;
-    justify-content: center;
+    height: 600px;
+    width: 600px;
 }
 .buttonIndex{
     background-color: green;
-    font-size: 20px;
+    font-size: 30px;
     border: none;
     color: white;
     border-radius: 5px;
     padding: 5px;
-    margin-bottom: 200px;
+    margin-bottom: 40px;
+    
 }
 .buttonIndex:hover {
     background-color: rgb(1, 161, 1);
@@ -32,5 +38,11 @@
     .logoindex{
         height: 300px;
         width: 300px;
+    }
+}
+@media (max-width: 768px) and (min-width:420px){
+    .logoindex{
+        height: 400px;
+        width: 400px;
     }
 }
