@@ -70,7 +70,7 @@ body {
   font-size: 30px;
   border: none;
   color: white;
-  border-radius: px;
+  border-radius: 10px;
   padding: 5px;
   margin-bottom: 40px; }
 
@@ -96,13 +96,16 @@ h1 {
   text-align: center;
   margin-bottom: 20px; }
 
+.h1Somos {
+  padding: 2px 10px 10px 10px; }
+
 #nosotros {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 200px;
-  margin-top: 200px; }
+  margin-bottom: 100px;
+  margin-top: 100px; }
 
 .txtNosotros {
   font-size: 20px;
@@ -110,9 +113,49 @@ h1 {
   text-align: center;
   width: 60%; }
 
+.accordion.accordion-3 {
+  border-radius: 3px; }
+
+.accordion.accordion-3 p {
+  font-size: 1rem; }
+
+.accordion.accordion-3 .fa.fa-angle-down {
+  margin-top: -10px; }
+
+.accordion .animated-icon1 span {
+  background: #F44336; }
+
+.sectionPreguntas {
+  padding: 0px 150px 0px 150px; }
+
+h3 {
+  color: black; }
+
+.imgPreguntas {
+  width: 600px;
+  height: 358px;
+  margin-top: 38px; }
+
+.rolloFlex {
+  display: flex;
+  justify-content: center; }
+
+@media (max-width: 768px) {
+  .sectionPreguntas {
+    padding: 0px; } }
+
+@media (max-width: 420px) {
+  .imgPreguntas {
+    width: 350px;
+    height: 350px;
+    margin-top: 20px; } }
+
 @media (min-width: 1300px) {
   .sectionContact {
     padding: 0px 150px 0px 150px; } }
+
+.sectionContact {
+  margin-top: 100px; }
 
 .icon {
   width: 40px;
@@ -146,8 +189,7 @@ h1 {
   padding: 0; }
 
 #contacto {
-  padding: 0px 100px 0px 100px;
-  margin-top: 70px; }
+  padding: 0px 100px 0px 100px; }
 
 .btn {
   background-color: green;
