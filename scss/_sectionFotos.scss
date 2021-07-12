@@ -10,14 +10,22 @@
     margin: 0 !important;
 }
 
-@media (max-width:780px){
+@media (max-width:992px){
     .imgFotos{
         height: 400px;
     }
+    #fotos .col-md-6{
+        flex: 0 0 100%;
+        max-width: 50%;
+    }
 }
 
-@media (max-width:420px){
+@media (max-width:560px){
     .imgFotos{
         height: 400px;
+    }
+    #fotos .col-sm-12{
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
