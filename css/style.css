@@ -78,7 +78,7 @@ p {
     height: 300px;
     width: 300px; }
   .dreamingreen {
-    height: 70vh; } }
+    height: 65vh; } }
 
 @media (max-width: 768px) and (min-width: 420px) {
   .logoindex {
@@ -343,9 +343,12 @@ h1 {
 @media (max-width: 768px) {
   #contacto {
     padding: 0;
-    margin: 0; }
+    margin: 0px 0px 20px 0px; }
   .contactMap {
-    height: 400px; } }
+    height: 400px;
+    margin-top: 10px; }
+  .sectionContact {
+    margin: 100px 38px 0px 38px; } }
 
 .iconRedes {
   height: 60px;
