@@ -24,3 +24,9 @@ h1{
     text-align: center;
     width: 60%;
 }
+
+@media (max-width:768px){
+    .txtNosotros{
+        width: 100%;
+    }
+}
