@@ -24,7 +24,8 @@ p {
   color: white; }
 
 .nav-link {
-  font-size: 30px; }
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 
 .navbar-light .navbar-nav .nav-link {
   color: green;
@@ -56,7 +57,7 @@ p {
   background-color: blanchedalmond; }
 
 .shadowIndex {
-  box-shadow: 0px 0px 40px 0px green; }
+  box-shadow: 0px 0px 25px 0px green; }
 
 .dreamingreen {
   display: inline-flex;
