@@ -304,11 +304,21 @@ h1 {
   text-align: center;
   flex-direction: column;
   align-items: center;
-  padding: 20px; }
+  padding: 20px;
+  border-radius: 10px;
+  background: #fff;
+  font-weight: 700;
+  color: var(--gris-claro);
+  border: 2px solid transparent;
+  transition: .3s ease all;
+  cursor: pointer;
+  --primario: green;
+  --sombra: 0 0 13px 0 rgba(185,185,185, .25);
+  font-family: 'Roboto', sans-serif; }
 
-.border {
-  border: none !important;
-  box-shadow: 3px green; }
+.contactInfo:hover {
+  box-shadow: var(--sombra);
+  color: #000; }
 
 .contactMap {
   width: 100%;
@@ -334,8 +344,6 @@ h1 {
   #contacto {
     padding: 0;
     margin: 0; }
-  .border {
-    border: none !important; }
   .contactMap {
     height: 400px; } }
 
