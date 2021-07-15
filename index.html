@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DreamInGreen</title>
+  <meta name="description" content="Somos Dream in Green! Una empresa familiar productora únicamente de Grama Brasilera. Contamos con una amplia experiencia en el rubro, cultivando hace más de 10 años. Brindamos la mejor relación precio/ calidad. Por su comodidad, ofrecemos un método innovador: formato rollo, logrando así una colocación más rápida y eficaz.">
+  <meta name="keywords" content="DREAMINGREEN, GRAMA, GRAMA BAHIANA, PASTO, CESPED, ROLLO, RUTA 25, PILAR, PILAR BUENOS AIRES">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -29,7 +31,18 @@
         <ul class="navbar-nav">
           <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
           <li class="nav-item"><a href="index.html#nosotros" class="nav-link">Nosotros</a></li>
-          <li class="nav-item"><a href="index.html#preguntas" class="nav-link">Preguntas</a></li>
+          <div class="dropdown mb-3">
+            <li class="btn btn-success dropdown-toggle nav-link btnFrecuentes" type="button" id="dropdownMenuBoton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Preguntas frecuentes
+          </li>
+            <div class="dropdown-menu bgFrecuentes" aria-labelledby="dropdownMenuBoton">
+                <a href="#preguntas" class="dropdown-item nav-link" onclick="irA('pago')">Metodos de pago</a>
+                <a href="#preguntas" class="dropdown-item nav-link" onclick="irA('entregas')">Entregas</a>
+                <a href="#preguntas" class="dropdown-item nav-link" onclick="irA('presentacion')">Presentacion del cesped</a>
+                <a href="#preguntas" class="dropdown-item nav-link" onclick="irA('mantenimiento')">Mantenimiento del cesped</a>
+            </div>            
+        </div>
           <li class="nav-item"><a href="views/fotos.html" class="nav-link">Fotos</a></li>
           <li class="nav-item"><a href="index.html#contacto" class="nav-link">Contacto</a></li>
         </ul>
@@ -59,19 +72,19 @@
     <section class="sectionPreguntas" id="preguntas">
       <h1 class="titulo">Preguntas Frecuentes</h1>
       <div class="categorias" id="categorias">
-        <div class="categoria activa" data-categoria="metodos-pago">
+        <div class="categoria activa" data-categoria="metodos-pago" id="pago">
           <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M21.19 7h2.81v15h-21v-5h-2.81v-15h21v5zm1.81 1h-19v13h19v-13zm-9.5 1c3.036 0 5.5 2.464 5.5 5.5s-2.464 5.5-5.5 5.5-5.5-2.464-5.5-5.5 2.464-5.5 5.5-5.5zm0 1c2.484 0 4.5 2.016 4.5 4.5s-2.016 4.5-4.5 4.5-4.5-2.016-4.5-4.5 2.016-4.5 4.5-4.5zm.5 8h-1v-.804c-.767-.16-1.478-.689-1.478-1.704h1.022c0 .591.326.886.978.886.817 0 1.327-.915-.167-1.439-.768-.27-1.68-.676-1.68-1.693 0-.796.573-1.297 1.325-1.448v-.798h1v.806c.704.161 1.313.673 1.313 1.598h-1.018c0-.788-.727-.776-.815-.776-.55 0-.787.291-.787.622 0 .247.134.497.957.768 1.056.344 1.663.845 1.663 1.746 0 .651-.376 1.288-1.313 1.448v.788zm6.19-11v-4h-19v13h1.81v-9h17.19z"/></svg>
           <p>Métodos de pago</p>
         </div>
-        <div class="categoria" data-categoria="entregas">
+        <div class="categoria" data-categoria="entregas" id="entregas">
           <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M7 24h-5v-9h5v1.735c.638-.198 1.322-.495 1.765-.689.642-.28 1.259-.417 1.887-.417 1.214 0 2.205.499 4.303 1.205.64.214 1.076.716 1.175 1.306 1.124-.863 2.92-2.257 2.937-2.27.357-.284.773-.434 1.2-.434.952 0 1.751.763 1.751 1.708 0 .49-.219.977-.627 1.356-1.378 1.28-2.445 2.233-3.387 3.074-.56.501-1.066.952-1.548 1.393-.749.687-1.518 1.006-2.421 1.006-.405 0-.832-.065-1.308-.2-2.773-.783-4.484-1.036-5.727-1.105v1.332zm-1-8h-3v7h3v-7zm1 5.664c2.092.118 4.405.696 5.999 1.147.817.231 1.761.354 2.782-.581 1.279-1.172 2.722-2.413 4.929-4.463.824-.765-.178-1.783-1.022-1.113 0 0-2.961 2.299-3.689 2.843-.379.285-.695.519-1.148.519-.107 0-.223-.013-.349-.042-.655-.151-1.883-.425-2.755-.701-.575-.183-.371-.993.268-.858.447.093 1.594.35 2.201.52 1.017.281 1.276-.867.422-1.152-.562-.19-.537-.198-1.889-.665-1.301-.451-2.214-.753-3.585-.156-.639.278-1.432.616-2.164.814v3.888zm3.79-19.913l3.21-1.751 7 3.86v7.677l-7 3.735-7-3.735v-7.719l3.784-2.064.002-.005.004.002zm2.71 6.015l-5.5-2.864v6.035l5.5 2.935v-6.106zm1 .001v6.105l5.5-2.935v-6l-5.5 2.83zm1.77-2.035l-5.47-2.848-2.202 1.202 5.404 2.813 2.268-1.167zm-4.412-3.425l5.501 2.864 2.042-1.051-5.404-2.979-2.139 1.166z"/></svg>
           <p>Entregas</p>
         </div>
-        <div class="categoria" data-categoria="Cesped">
+        <div class="categoria" data-categoria="Cesped" id="presentacion">
           <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M7.458 8.084l.405-.916c.694-1.565 1.591-3.592 2.754-6.265.258-.592.881-.906 1.397-.888.572.015 1.126.329 1.369.888 1.163 2.673 2.06 4.7 2.754 6.265l.405.916c.375-.936.806-2.016 1.3-3.267.204-.518.67-.806 1.17-.802.482.004.941.284 1.146.802.873 2.209 1.547 3.885 2.069 5.179 1.571 3.91 1.773 4.413 1.773 5.603 0 2.388-1.42 4.402-3.5 5.04v2.39h3.5v1h-24v-1h3.5v-2.39c-2.08-.638-3.5-2.652-3.5-5.04 0-1.19.202-1.693 1.774-5.603.521-1.294 1.195-2.97 2.068-5.179.204-.518.67-.806 1.17-.802.482.004.941.284 1.146.802.494 1.251.925 2.331 1.3 3.267zm7.915 11.197c-.569.331-1.199.581-1.873.733v3.015h4v-2.39c-.83-.254-1.555-.728-2.127-1.358zm-6.746 0c-.572.63-1.297 1.104-2.127 1.358v2.39h4v-3.015c-.674-.152-1.304-.402-1.873-.733zm3.873 3.734v-3.839c4.906-.786 5-4.751 5-5.244 0-1.218-.216-1.705-2.277-6.359-2.134-4.82-2.721-6.198-2.755-6.261-.079-.145-.193-.292-.455-.297-.238 0-.37.092-.481.297-.034.063-.621 1.441-2.755 6.261-2.061 4.654-2.277 5.141-2.277 6.359 0 .493.094 4.458 5 5.244v3.839h1zm-5.606-13.65c-1.264-3.153-1.639-4.117-1.664-4.167-.072-.151-.15-.226-.226-.228-.109 0-.188.13-.235.228-.028.05-.316.818-2.066 5.171-1.542 3.833-1.703 4.233-1.703 5.23 0 1.988 1.076 3.728 3.5 4.25v3.166h1v-3.166c.975-.209 1.729-.615 2.282-1.152-1.409-1.152-2.282-2.868-2.282-4.765 0-1.17.18-1.789 1.394-4.567zm9.323 9.332c.556.538 1.311.943 2.283 1.152v3.166h1v-3.166c2.448-.527 3.5-2.29 3.5-4.25 0-.997-.161-1.397-1.703-5.23-1.589-3.957-2.04-5.116-2.067-5.171-.072-.151-.15-.226-.226-.228-.109 0-.188.13-.235.228-.026.046-.27.697-1.663 4.167 1.214 2.778 1.394 3.397 1.394 4.567 0 1.897-.873 3.613-2.283 4.765z"/></svg>
           <p>Presentacion de cesped</p>
         </div>
-        <div class="categoria" data-categoria="mantenimiento">
+        <div class="categoria" data-categoria="mantenimiento" id="mantenimiento">
           <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M13 23h-6v-6.065c.626-.155 1.04-.496 1.319-1.046 2.152.773 3.647-2.303 1.819-3.556.949-1.116.245-2.727-1.207-2.522-.698-2.361-4.151-2.379-4.85 0-1.405-.227-2.186 1.199-1.385 2.289-1.648 1.404-.105 4.036 1.872 3.467.217.703.78 1.184 1.432 1.357v6.076h-2v-4.877c-.304-.239-.551-.515-.546-.51-2.001-.266-3.454-2.114-3.454-4.069 0-.583.129-1.173.41-1.735-.322-1.653.654-3.337 2.356-3.874l.018-.006c.827-1.162 2.152-1.823 3.517-1.893l5.682-5.036 12.017 10.647-1.33 1.491-10.687-9.469-3.284 2.908c.308.164.595.36.855.59l2.419-2.149c1.126.998 2.255 1.995 3.384 2.993l2.258 1.994 3.385 2.995v10h-6v-5h-2v5zm-2-5.585c-.713.445-1.259.529-2 .585v3h2v-3.585zm1.415-1.406l4.585-.009v5h2v-7.117l-7.027-6.196-.813.72c1.124.795 1.697 2.21 1.351 3.614.646 1.147.669 2.693-.096 3.988m-5.962-3.688c1.495-1.022 3.241.769 2.302 2.224.002-1.472-.852-2.279-2.302-2.224m-2.118 1.19c-1.247-1.865 1.004-4.164 2.904-2.894-1.892-.032-2.946 1.043-2.904 2.894"/></svg>
           <p>Mantenimiento de cesped</p>
         </div>
@@ -149,7 +162,7 @@
         <div class="col-12 col-md-6 px-2 contactInfo">
           <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMmM1LjUxNCAwIDEwIDQuNDg2IDEwIDEwcy00LjQ4NiAxMC0xMCAxMC0xMC00LjQ4Ni0xMC0xMCA0LjQ4Ni0xMCAxMC0xMHptMC0yYy02LjYyNyAwLTEyIDUuMzczLTEyIDEyczUuMzczIDEyIDEyIDEyIDEyLTUuMzczIDEyLTEyLTUuMzczLTEyLTEyLTEyem0xIDEydi02aC0ydjhoN3YtMmgtNXoiLz48L3N2Zz4=" class="icon">
           <b class="title">Horario de atención</b>
-          <p class="info">Lun-Vie 10:00hs a 17:00hs</p>
+          <p class="info">Lun-Vie 09:00hs a 17:00hs</p>
           <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNLjA1NyAyNGwxLjY4Ny02LjE2M2MtMS4wNDEtMS44MDQtMS41ODgtMy44NDktMS41ODctNS45NDYuMDAzLTYuNTU2IDUuMzM4LTExLjg5MSAxMS44OTMtMTEuODkxIDMuMTgxLjAwMSA2LjE2NyAxLjI0IDguNDEzIDMuNDg4IDIuMjQ1IDIuMjQ4IDMuNDgxIDUuMjM2IDMuNDggOC40MTQtLjAwMyA2LjU1Ny01LjMzOCAxMS44OTItMTEuODkzIDExLjg5Mi0xLjk5LS4wMDEtMy45NTEtLjUtNS42ODgtMS40NDhsLTYuMzA1IDEuNjU0em02LjU5Ny0zLjgwN2MxLjY3Ni45OTUgMy4yNzYgMS41OTEgNS4zOTIgMS41OTIgNS40NDggMCA5Ljg4Ni00LjQzNCA5Ljg4OS05Ljg4NS4wMDItNS40NjItNC40MTUtOS44OS05Ljg4MS05Ljg5Mi01LjQ1MiAwLTkuODg3IDQuNDM0LTkuODg5IDkuODg0LS4wMDEgMi4yMjUuNjUxIDMuODkxIDEuNzQ2IDUuNjM0bC0uOTk5IDMuNjQ4IDMuNzQyLS45ODF6bTExLjM4Ny01LjQ2NGMtLjA3NC0uMTI0LS4yNzItLjE5OC0uNTctLjM0Ny0uMjk3LS4xNDktMS43NTgtLjg2OC0yLjAzMS0uOTY3LS4yNzItLjA5OS0uNDctLjE0OS0uNjY5LjE0OS0uMTk4LjI5Ny0uNzY4Ljk2Ny0uOTQxIDEuMTY1LS4xNzMuMTk4LS4zNDcuMjIzLS42NDQuMDc0LS4yOTctLjE0OS0xLjI1NS0uNDYyLTIuMzktMS40NzUtLjg4My0uNzg4LTEuNDgtMS43NjEtMS42NTMtMi4wNTktLjE3My0uMjk3LS4wMTgtLjQ1OC4xMy0uNjA2LjEzNC0uMTMzLjI5Ny0uMzQ3LjQ0Ni0uNTIxLjE1MS0uMTcyLjItLjI5Ni4zLS40OTUuMDk5LS4xOTguMDUtLjM3Mi0uMDI1LS41MjEtLjA3NS0uMTQ4LS42NjktMS42MTEtLjkxNi0yLjIwNi0uMjQyLS41NzktLjQ4Ny0uNTAxLS42NjktLjUxbC0uNTctLjAxYy0uMTk4IDAtLjUyLjA3NC0uNzkyLjM3MnMtMS4wNCAxLjAxNi0xLjA0IDIuNDc5IDEuMDY1IDIuODc2IDEuMjEzIDMuMDc0Yy4xNDkuMTk4IDIuMDk1IDMuMiA1LjA3NiA0LjQ4Ny43MDkuMzA2IDEuMjYzLjQ4OSAxLjY5NC42MjYuNzEyLjIyNiAxLjM2LjE5NCAxLjg3Mi4xMTguNTcxLS4wODUgMS43NTgtLjcxOSAyLjAwNi0xLjQxMy4yNDgtLjY5NS4yNDgtMS4yOS4xNzMtMS40MTR6Ii8+PC9zdmc+" class="icon">
           <b class="title">Teléfono</b>
           <p class="info">11-5834-3368</p>
@@ -168,19 +181,21 @@
       </div>
       <div>
         <div class="col-12 px-2">
+          <form action="">
           <div class="form-group form">
             <label for="nombre">Nombre:</label>
             <input type="text" class="form-control" name="apellido" placeholder="Nombre">
-          </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="text" class="form-control" name="email" placeholder="Email" id="">
-          </div>
-          <div class="form-group">
-            <label for="mensaje">Mensaje:</label>
-            <textarea class="form-control" name="mensaje" placeholder="Mensaje" id=" " rows="10"></textarea>
-          </div>
-          <p class="FlexButtonContact"><button type="submit" class="btn btn-primary">Enviar</button></p>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="text" class="form-control" name="email" placeholder="Email" id="">
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje:</label>
+              <textarea class="form-control" name="mensaje" placeholder="Mensaje" id=" " rows="10"></textarea>
+            </div>
+            <p class="FlexButtonContact"><button type="submit" class="btn btn-primary">Enviar</button></p>
+          </form>
         </div>
       </div>
     </section>

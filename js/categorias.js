@@ -22,3 +22,23 @@ categorias.forEach((categoria) => {
 		});
 	});
 });
+
+function irA(dondeVoy){
+	let catDestino=document.querySelector('#categorias #' + dondeVoy);
+	categorias.forEach((elemento) => {
+		elemento.classList.remove('activa');
+	});
+
+	catDestino.classList.toggle('activa');
+	categoriaActiva = catDestino.dataset.categoria;
+
+
+	// Activamos el contenedor de preguntas que corresponde
+	contenedorPreguntas.forEach((contenedor) => {
+		if(contenedor.dataset.categoria === categoriaActiva){
+			contenedor.classList.add('activo');
+		} else {
+			contenedor.classList.remove('activo');
+		}
+	});
+}

@@ -14,18 +14,40 @@ body {
 p {
   margin: 0; }
 
+@font-face {
+  font-family: 'Oxygen';
+  src: url("../assets/fonts/Oxygen-light.ttf");
+  font-family: 'Raleway';
+  src: url("../assets/fonts/Raleway-VariableFont_wght.ttf"); }
+
 .flexNavIcons {
   display: flex; }
 
 .navbar {
   padding-left: 0px; }
 
+.navbar-nav {
+  margin-top: 10px; }
+
 .dreamNav:hover {
   color: white; }
 
 .nav-link {
-  font-size: 30px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+  font-size: 22px;
+  font-family: 'Raleway'; }
+
+.btnFrecuentes {
+  background-color: blanchedalmond !important;
+  border: none;
+  color: green;
+  border-color: blanchedalmond;
+  height: 20px; }
+
+.dropdown-menu {
+  margin-top: 10px; }
+
+.bgFrecuentes {
+  background-color: blanchedalmond; }
 
 .navbar-light .navbar-nav .nav-link {
   color: green;
@@ -36,13 +58,13 @@ p {
   justify-content: flex-end; }
 
 .iconRedesNav {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   margin: 0px 10px 0px 10px; }
 
 .iconFaceNav {
-  width: 45px;
-  height: 45px; }
+  width: 40px;
+  height: 40px; }
 
 .iconInstaNav {
   margin-top: 1.9px; }
@@ -107,12 +129,14 @@ h1 {
 .txtNosotros {
   font-size: 20px;
   line-height: 1.5;
-  text-align: center;
+  text-align: justify;
   width: 60%; }
 
 @media (max-width: 768px) {
   .txtNosotros {
-    width: 100%; } }
+    width: 100%;
+    margin: 0px 15px 0px 15px;
+    text-align: center; } }
 
 .sectionPreguntas {
   max-width: 1000px;
